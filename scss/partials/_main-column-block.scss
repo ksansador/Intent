@@ -1,0 +1,49 @@
+%before{
+  content: "";
+  width: 31px;
+  height: 30px;
+  display: inline-block;
+  margin-bottom: -8px;
+  margin-right: 17px;
+  @include sm{
+    display: block;
+    margin: 0px auto 20px;
+  }
+}
+
+.main-column-block-inner{
+  padding: 30px 11px 54px 7px;
+  &-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    &-card{
+      width: 29%;
+      margin-bottom: 10px;
+      &-title{
+        font-family: $sub-font;
+        color: $title-color;
+        font-size: 18px;
+        text-transform: capitalize;
+        &::before{
+          @extend %before;
+        }
+        &-sliders::before{
+          @include cards-icons-sprite(-2px, 0px);
+        }
+        &-theme::before{
+          @include cards-icons-sprite(-35px, 0px)
+        }
+        &-customize::before{
+          @include cards-icons-sprite(-75px, 0px)
+        }
+        @include sm{
+          text-align: center;
+        }
+      }
+      @include md{
+        width: 80%;
+      }
+    }
+  }
+}

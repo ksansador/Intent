@@ -1,0 +1,116 @@
+%icons-sprite{
+  content: "";
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  border-radius: 3px;
+  margin: 1px 4px 4px 0px;
+}
+
+.footer{
+  padding: 48px 0 66px 0;
+  border-top: 8px solid $detail-color;
+  @include background-dark;
+  &-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &-col{
+      width: 32%;
+      &-title{
+        color: $title-variable-color;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+      &-text{
+        border-bottom: 1px solid #3b3b3b;
+        font-family: $sub-font;
+        padding: 0 49px 12px 0;
+        word-spacing: 4px;
+      }
+      &-text-2{
+         font-family: $sub-font;
+         word-spacing: 2px;
+      }
+      &-icons{
+        &-link{
+          display: inline-block;
+          text-decoration: none;
+          &::before{
+            @extend %icons-sprite;
+          }
+          &-1::before{
+            @include footer-icons-sprite(-3px, -7px);
+          }
+          &-2::before{
+            @include footer-icons-sprite(-42px, -7px)
+          }
+          &-3::before {
+            @include footer-icons-sprite(-79px, -7px)
+          }
+          &-4::before {
+            @include footer-icons-sprite(-117px, -7px)
+          }
+          &-5::before {
+            @include footer-icons-sprite(-155px, -7px)
+          }
+          &-6::before {
+            @include footer-icons-sprite(-193px, -7px)
+          }
+          &-7::before {
+            @include footer-icons-sprite(-231px, -7px)
+          }
+          &-8::before {
+            @include footer-icons-sprite(-269px, -7px)
+          }
+          &-9::before {
+            @include footer-icons-sprite(-3px, -46px)
+          }
+          &-10::before {
+            @include footer-icons-sprite(-41px, -46px)
+          }
+          &-11::before {
+            @include footer-icons-sprite(-79px, -46px)
+          }
+          &-12::before {
+            @include footer-icons-sprite(-117px, -46px)
+          }
+          &-13::before {
+            @include footer-icons-sprite(-155px, -46px)
+          }
+          &-14::before {
+            @include footer-icons-sprite(-193px, -46px)
+          }
+          &-15::before {
+            @include footer-icons-sprite(-231px, -46px)
+          }
+          &-16::before {
+            @include footer-icons-sprite(-269px, -46px)
+          }
+          &-17::before {
+            @include footer-icons-sprite(-3px, -85px)
+          }
+          &-18::before {
+            @include footer-icons-sprite(-41px, -85px)
+          }
+          &-19::before {
+            @include footer-icons-sprite(-79px, -85px)
+          }
+          &-20::before {
+            @include footer-icons-sprite(-117px, -85px)
+          }
+
+
+        }
+
+      }
+      @include md{
+        width: 80%;
+      }
+    }
+    @include md{
+      justify-content: center;
+    }
+
+  }
+}

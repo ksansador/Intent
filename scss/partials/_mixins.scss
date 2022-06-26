@@ -1,0 +1,35 @@
+@mixin background-dark{
+  background: url(../images/header-icon-back.jpg) 0 0 repeat;
+}
+
+@mixin header-icons-sprite($x, $y){
+  background: url(../images/header-sprite.png) $x $y no-repeat;
+}
+
+@mixin lg {
+  @media screen and (max-width: 900px) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media screen and (max-width: 576px) {
+    @content;
+  }
+
+}
+@mixin cards-icons-sprite($x, $y){
+  background:
+  url(../images/cards-sprite.png) $x $y no-repeat,
+  #25282a;
+}
+
+@mixin footer-icons-sprite($x, $y){
+  background: url(../images/footer-sprite.png) $x $y no-repeat;
+}
